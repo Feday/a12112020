@@ -343,7 +343,7 @@ tr td {
     }
     span#location-city-state {
         font-size: 45px;
-        padding-top: 50px;
+        display: block;
     }
     section#conditions {
         padding-top: 35px;
