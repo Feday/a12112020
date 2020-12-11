@@ -1,0 +1,462 @@
+.app {
+    text-align: center;
+}
+
+body {
+    background-color: lightsalmon;
+}
+
+.zip-input-form {
+    align-content: center;
+    padding-top: 2vw;
+}
+
+.zip-input {
+    font-size: 3vw;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+}
+
+.timezone {
+    font-size: medium;
+    color: grey;
+}
+
+#mph {
+    font-size: small;
+}
+
+.section-heading {
+    color: #555
+}
+
+section {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+section#location {
+    background-color: lightblue;
+}
+
+section#conditions {
+    background-color: lightgray;
+    font-size: 3vw;
+}
+
+section#forecast,
+section#hourly {
+    background-color: lightsalmon;
+    font-size: 2vw;
+    line-height: 200%;
+}
+
+.forecast-smaller {
+    font-size: 1.52vw;
+}
+
+form {
+    padding-bottom: 1vw;
+}
+
+span.reload-link:hover {
+    cursor: pointer;
+}
+
+.reload {
+    vertical-align: middle;
+}
+
+.reload img {
+    padding-left: 3vw;
+    width: 3%;
+    height: 3%;
+}
+
+span#location-city-state {
+    font-weight: bold;
+    font-size: 3vw;
+    text-shadow: 3px 3px 1px #bb9
+}
+
+.conditions-heading {
+    font-size: smaller;
+}
+
+#forecast-header {
+    font-style: italic;
+}
+
+table {
+    position: relative;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    font-weight: normal;
+    background-color: lightsalmon;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+thead tr,
+table tr#forecast-header {
+    line-height: 15px;
+}
+
+tr td {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.table-heading {
+    font-weight: bold;
+}
+
+.forecast-conditions {
+    font-weight: bold;
+}
+
+.forecast-temperature {
+    vertical-align: middle;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.high-temperature {
+    font-weight: 600;
+}
+
+.daily-image-icon {
+    vertical-align: middle;
+}
+
+.current-route {
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Mobile Phone */
+
+@media screen and (max-width: 600px) {
+    section {
+        padding: 5vw;
+    }
+    span#location-city-state {
+        text-shadow: 2px 2px 1px #bb9;
+        font-size: 7vw;
+    }
+    section#conditions {
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        font-size: 7vw;
+    }
+    section#location {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    section#forecast {
+        padding-top: 3vw;
+        font-size: 6vw;
+    }
+    section#hourly {
+        padding-top: 3vw;
+        font-size: 6vw;
+    }
+    table tr {
+        line-height: 120%;
+    }
+    .zip-input {
+        font-size: 8vw;
+        width: 30vw;
+    }
+    .not-on-mobile {
+        display: none;
+    }
+    .hidden {
+        display: none
+    }
+    .big-screen-only,
+    .bigger-screen-only,
+    .biggest-screen-only {
+        display: none;
+    }
+    form {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .forecast-smaller {
+        font-size: 5vw;
+    }
+    .reload img {
+        width: 7%;
+        height: 7%;
+        padding-left: 4vw;
+        vertical-align: text-bottom;
+    }
+    .zip-input:focus {
+        outline: none;
+    }
+    .forecast-temperature {
+        font-size: 15vw;
+    }
+}
+
+
+/* Mobile Phone landscape (sideways) */
+
+@media screen and (max-width: 800px) and (orientation:landscape) {
+    section#location {
+        padding-top: 2vw;
+        padding-bottom: 0;
+    }
+    section#forecast,
+    section#hourly {
+        padding-top: 0;
+    }
+}
+
+
+/* Just for flex */
+
+@media screen and (min-width: 600px) {
+    section#location,
+    section#conditions {
+        flex-direction: row;
+        flex-grow: 1;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    section#location {
+        flex-grow: 0.35;
+        padding-top: 40px;
+    }
+    section#conditions {
+        flex-grow: 0.65;
+    }
+    span.flex-container {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section#location {
+        flex-grow: 0.35;
+        padding-left: 12vw;
+    }
+    section#conditions {
+        flex-grow: 0.65;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section#location {
+        flex-grow: 0.45;
+    }
+    section#conditions {
+        flex-grow: 0.55;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    section#location {
+        flex-grow: 0.45;
+    }
+    section#conditions {
+        flex-grow: 0.55;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    section {
+        font-size: 5vw;
+    }
+    span#location-city-state {
+        font-size: 4vw;
+    }
+    section#location {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    section#forecast,
+    section#hourly,
+    section#conditions {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-size: 3vw;
+    }
+    section#conditions {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    table tr {
+        line-height: 140%;
+    }
+    .zip-input {
+        font-size: 3.5vw;
+    }
+    .big-screen-only,
+    .bigger-screen-only,
+    .biggest-screen-only {
+        display: none;
+    }
+    .forecast-smaller {
+        font-size: 2.5vw;
+    }
+    form {
+        border-top: 3vw;
+    }
+    .reload img {
+        width: 6%;
+        height: 6%;
+        vertical-align: middle;
+    }
+    .reload a {
+        vertical-align: top;
+    }
+    .forecast-temperature {
+        font-size: 7vw;
+    }
+}
+
+
+/* Medium size ('big-screen-only') browser screens */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .bigger-screen-only,
+    .biggest-screen-only {
+        display: none;
+    }
+    section {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    section#location {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    span#location-city-state {
+        font-size: 45px;
+        padding-top: 50px;
+    }
+    section#conditions {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    section#forecast,
+    section#hourly {
+        font-size: 2.3vw;
+    }
+    section#forecast,
+    section#hourly {
+        padding-top: 2vw;
+    }
+    .reload img {
+        width: 6%;
+        height: 6%;
+    }
+    section#forecast-smaller {
+        font: 1.8vw;
+    }
+    .zip-input {
+        font-size: 3vw;
+        vertical-align: text-bottom;
+    }
+}
+
+
+/* Larger size ('bigger-screen-only') browser windows */
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .biggest-screen-only {
+        display: none;
+    }
+    span#location-city-state {
+        font-size: 45px;
+    }
+    section#location {
+        padding-left: 18vw;
+    }
+    section#conditions {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    section#forecast,
+    section#hourly {
+        font-size: 24px;
+    }
+    .forecast-smaller {
+        font-size: 20px;
+    }
+    .zip-input {
+        font-size: 42px;
+    }
+    .reload img {
+        vertical-align: text-bottom;
+    }
+    .reload img {
+        padding-left: 30px;
+        width: 35px;
+        height: 35px;
+    }
+    section#conditions {
+        font-size: 36px;
+        padding-right: 18vw;
+    }
+    .forecast-temperature {
+        font-size: 55px;
+    }
+}
+
+
+/* Largest browser window - note no max-width for these */
+
+@media screen and (min-width: 1800px) {
+    section#location {
+        padding-left: 20vw;
+    }
+    section#forecast,
+    section#hourly {
+        font-size: 24px;
+    }
+    section#conditions {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-size: 36px;
+        padding-right: 20vw;
+    }
+    .forecast-smaller {
+        font-size: 20px;
+    }
+    span#location-city-state {
+        font-size: 45px;
+    }
+    .zip-input {
+        width: 180px;
+        font-size: 42px;
+    }
+    .reload img {
+        width: 35px;
+        height: 35px;
+        padding-left: 30px;
+        vertical-align: text-bottom;
+    }
+    .forecast-temperature {
+        font-size: 55px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    section#location {
+        padding-left: 20vw;
+    }
+    section#conditions {
+        padding-right: 20vw
+    }
+}
